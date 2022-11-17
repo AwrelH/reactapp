@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import StatefulGreetingWCallback from './components/FunctionStatefulWCallback';
-
+import ConditionalRenderingClass from './components/ConditionalRenderingClass';
+import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
 
 function App() {
   return (
     <div className="App">
       
-      <StatefulGreetingWCallback  /> 
+   <ConditionalRenderingClass />
+   <ConditionalRenderingFunctional  />
     </div>
   );
 }
