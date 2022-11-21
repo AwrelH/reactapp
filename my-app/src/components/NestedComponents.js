@@ -14,11 +14,17 @@ export default class NestingComponents extends Component {
   render() {
     return (
       <div>
-        <h1>
-            <UserData isLoaded={this.state.isLoaded} />
-            <UserMessage isLoggedIn={this.state.isLoggedIn} />
-            
-        </h1>
+        {this.state.isLoggedIn? (
+                   <div></div>
+                ): (
+                    <form>
+                    <label for="username">username:</label>
+    <input type="text" id="name" name="name" />
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password" />
+    <button onClick={()=> {this.handleClick()}}>{this.state.text}</button>
+                    </form>
+                )}
       </div>
     )
   }
