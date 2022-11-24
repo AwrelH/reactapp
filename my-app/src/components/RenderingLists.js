@@ -25,7 +25,7 @@ function RenderingLists() {
   return (
     <div>
         {books.map( book => {
-            return <Book bok={book}/>
+            return <Book key={book.title} bok={book}/>
         })}
     </div>
   )
