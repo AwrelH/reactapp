@@ -36,7 +36,7 @@ export class ControlledForm extends Component {
     return (
       <div>
         <h2>fill out the form yo</h2>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="id-name">Your Name:</label>
             <input

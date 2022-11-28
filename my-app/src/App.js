@@ -1,12 +1,12 @@
 
 import './App.css';
-import SearchBar from './components/SearchBar';
+import HTTPRequests from './components/HTTPRequests';
 
 function App() {
   return (
     <div className="App">
       
-      <SearchBar />
+     <HTTPRequests />
     
     </div>
   );
